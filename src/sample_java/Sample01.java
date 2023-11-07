@@ -53,7 +53,15 @@ public class Sample01 {
 		System.out.println(" ");
 		}
 		
+		int[] score = {20,30,40,50};
+		for (int i = 0; i < score.length; i++) {
+			System.out.println(score[i]);
+		}
+		for (int value:score) {
+			System.out.println(value);
+		}
 		**/
+		
 		
 		
 	

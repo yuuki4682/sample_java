@@ -74,7 +74,6 @@ public class Test {
 			System.out.println("変更します");
 			break;
 		}
-		**/
 		
 		//3-6
 		System.out.println("【数あてゲーム】");
@@ -90,6 +89,41 @@ public class Test {
 			}
 		}
 		System.out.println("ゲームを修了します");
+		
+		**/
+		/**
+		//4-1
+		int[] points = new int[4];
+		double[] weights = new double[5];
+		boolean[] answers = new boolean[3];
+		String[] names = new String[3];
+		
+		//4-2
+		int[] moneyList = {121903, 8302, 55100};
+		for (int i = 0; i < moneyList.length; i ++) {
+			System.out.println(moneyList[i]);
+		}
+		for (int value : moneyList) {
+			System.out.println(value);
+		}
+		**/
+		//4-3
+		int[] numbers = {3, 4, 9};
+		boolean end = false;
+		
+		while (end == false) {
+			System.out.println("一桁の数字をにゅうりょくしてください");
+			int input = new java.util.Scanner(System.in).nextInt();
+			for (int x:numbers) {
+				if (input == x) {
+					System.out.println("アタリ");
+					end = true;
+					break;
+				}else {
+					System.out.println("ハズレ");
+				}
+			}
+		}
 	}
 
 }
