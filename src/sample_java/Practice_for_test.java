@@ -31,22 +31,52 @@ public class Practice_for_test {
 		}
 		System.out.println(Arrays.toString(arr));
 		
-		System.out.print("1-10の奇数:");
-		for (int i = 0; i < 10; i ++) {
-			int temp1 = arr[i];
-			if (temp1 % 2 == 1) {
-				System.out.print(temp1 + ",");
+		boolean flg = true;
+		String str1 = "";
+		String str2 = "";
+		
+		for (int i = 0; i < 10; i++) {
+			if (arr[i] % 2 == 1) {
+				if (flg) {
+					str1 += arr[i];
+					flg = false;
+				}else {
+					str1 += "," + arr[i];
+				}
 			}
 		}
-
-		System.out.println("");
-		System.out.print("11-20の偶数:");
+		
+		flg = true;
 		for (int i = 11; i < 20; i ++) {
-			int temp2 = arr[i];
-			if (temp2 % 2 == 0) {
-				System.out.print(temp2 + ",");
+			if (arr[i] % 2 == 0) {
+				if (flg) {
+					str2 += arr[i];
+					flg = false;
+				}else {
+					str2 += "," + arr[i];
+				}
 			}
 		}
+		
+		
+		System.out.println("奇数：" + str1);
+		System.out.println("偶数：" + str2);
+//		System.out.print("1-10の奇数:");
+//		for (int i = 0; i < 10; i ++) {
+//			int temp1 = arr[i];
+//			if (temp1 % 2 == 1) {
+//				System.out.print(temp1 + ",");
+//			}
+//		}
+//
+//		System.out.println("");
+//		System.out.print("11-20の偶数:");
+//		for (int i = 11; i < 20; i ++) {
+//			int temp2 = arr[i];
+//			if (temp2 % 2 == 0) {
+//				System.out.print(temp2 + ",");
+//			}
+//		}
 		
 		
 	}

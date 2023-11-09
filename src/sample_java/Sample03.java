@@ -18,7 +18,7 @@ public class Sample03 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		/**
+		
 		System.out.println("メソッドを呼び出します");
 		hello("Taro");
 		System.out.println("メソッドの呼び出し終了");
@@ -32,7 +32,7 @@ public class Sample03 {
 		int[] arr = {1, 2, 3};
 		printArray(arr);
 		
-		**/
+		
 		
 		//int[] array = {1, 2, 3};
 		//incArray(array);
@@ -48,7 +48,7 @@ public class Sample03 {
 	}
 	
 	
-	/**
+	
 	public static void hello(String name) {
 		System.out.println(name + "さん、こんにちは");
 	}
@@ -64,6 +64,6 @@ public class Sample03 {
 			System.out.println(element);
 		}
 	}
-	**/
+	
 
 }
